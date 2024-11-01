@@ -7,7 +7,7 @@ POST {{url}}/plataformas
 Content-Type: application/json
 
 {
-    "nome": "PC"
+    "nome": "Xbox"
 }
 
 ###

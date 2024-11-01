@@ -7,9 +7,11 @@ POST {{url}}/jogos
 Content-Type: application/json
 
 {
-    "titulo": "Counter Strike 2",
-    "plataforma": 2
+    "titulo": "CS GO",
+    "plataformas": [{
+        "id": 2
+    }]
 }
 
 ###
-GET {{url}}/jogos/1
+GET {{url}}/jogos/5

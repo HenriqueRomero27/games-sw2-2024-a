@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import application.record.JogoDTO;
+import application.record.JogoListDTO;
 import application.service.JogoService;
 
 @RestController
@@ -23,8 +24,8 @@ public class JogoController {
     }
 
     @GetMapping 
-    public Iterable<JogoDTO> list() {
-        return jogoService.getAll();
+    public Iterable<JogoListDTO> list() {
+        return jogoService.getAllSimple();
     }
 
     @GetMapping("/{id}")
